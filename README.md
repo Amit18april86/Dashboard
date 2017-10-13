@@ -10,6 +10,29 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+## Connecting Json-server
+Run `npm install json-server -g` to globally install json-server for development
+
+create users.json file to any folder and add user entry like
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Amit Sharma",
+      "firstName": "Amit",
+      "lastName": "Sharma",
+      "sex": "male",
+      "maritial": "single",
+      "email": "amit.sharma@synerzip.com",
+      "password": "amitsharma"
+    },
+    ...
+    ...
+ }
+ 
+ run `json-server --watch path_to_users.json`
+ This will start a json server at localhost:3000
+ 
 ## Developers
 
 Full Name  | Email Address
