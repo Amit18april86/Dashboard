@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="login()">
+  <p>
+    <mat-form-field>
+      <input matInput placeholder="Email" type="text" formControlName="email">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" formControlName="password">
+    </mat-form-field>
+  </p>
+  <p>
+    <button mat-raised-button type="submit">Login</button>
+    <button mat-raised-button type="reset" (click)="resetForm()">Reset</button>
+  </p>
+  <span *ngIf="errorMsg">{{errorMsg}}</span>
+</form>

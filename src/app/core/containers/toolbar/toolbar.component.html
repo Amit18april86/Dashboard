@@ -1,0 +1,18 @@
+<span class="lead">Dashboard</span>
+<button class="toolbarMenu" mat-button mat-icon-button [matMenuTriggerFor]="menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item title="SignIn" *ngIf="!isLoggedIn">
+    <mat-icon>fingerprint</mat-icon>
+    <span>Sign In</span>
+  </button>
+  <button mat-menu-item title="SignOut" *ngIf="isLoggedIn" (click)="signOut()">
+    <mat-icon>exit_to_app</mat-icon>
+    <span>Sign Out</span>
+  </button>
+  <button mat-menu-item title="Help">
+    <mat-icon>help</mat-icon>
+    <span>Help</span>
+  </button>
+</mat-menu>

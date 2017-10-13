@@ -1,0 +1,6 @@
+<div>
+  <app-toolbar
+    (logoff)="onSignOff()"
+    [isLoggedIn]="loggedIn$ | async"></app-toolbar>
+  <router-outlet></router-outlet>
+</div>

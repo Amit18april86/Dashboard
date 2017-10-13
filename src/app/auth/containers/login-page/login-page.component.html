@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>
+    <span class="lead">Log in</span>
+  </mat-card-title>
+  <mat-card-content>
+    <app-login-form
+      (resetLoginForm)="onLoginReset()"
+      (authenticate)="onLogin($event)"
+      [errorMsg]="errorMessage$ | async"></app-login-form>
+  </mat-card-content>
+</mat-card>
