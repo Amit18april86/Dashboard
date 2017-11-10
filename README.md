@@ -21,9 +21,8 @@ create users.json file to any folder and add user entry like
       "name": "Amit Sharma",
       "firstName": "Amit",
       "lastName": "Sharma",
-      "sex": "male",
       "maritial": "single",
-      "email": "amit.sharma@synerzip.com",
+      "email": "amit18april86@gmail.com",
       "password": "amitsharma"
     },
     ...
