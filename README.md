@@ -32,6 +32,9 @@ create users.json file to any folder and add user entry like
  run `json-server --watch path_to_users.json`
  This will start a json server at localhost:3000
  
+ Once the server is up and running , login with
+ web app using given credentials. Install redux devtool to understand the redux flow.
+ 
 ## Developers
 
 Full Name  | Email Address
